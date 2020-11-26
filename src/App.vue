@@ -1,16 +1,30 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
   <HelloWorld msg="Welcome to Your Vue.js App"/>
+<!--  <Ref :range='state.range'/>-->
+  <RefAndToRef />
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
-
+// import Ref from './components/ref';
+import RefAndToRef from './components/ref-toRef';
+import { reactive } from 'vue';
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    HelloWorld,
+    // Ref,
+    RefAndToRef
+  },
+  setup() {
+    const state = reactive({
+      range: 5
+    });
+    return {
+      state
+    }
+  },
 }
 </script>
 

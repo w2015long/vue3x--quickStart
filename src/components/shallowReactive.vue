@@ -5,6 +5,8 @@
     <p>{{ shallow.first.second.c }}</p>
     <button @click="change1">改变第一层</button>
     <br>
+    <br>
+    <br>
     <button @click="change2">改变深层</button>
 </template>
 <script>

@@ -2,20 +2,27 @@
   <img alt="Vue logo" src="./assets/logo.png">
   <HelloWorld msg="Welcome to Your Vue.js App"/>
 <!--  <Ref :range='state.range'/>-->
-  <RefAndToRef />
+<!--  <RefAndToRef />-->
+<!--  <ToRefs/>-->
+  <shallowReactive />
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
 // import Ref from './components/ref';
-import RefAndToRef from './components/ref-toRef';
+// import RefAndToRef from './components/ref-toRef';
+// import ToRefs from './components/toRefs';
+import shallowReactive from "./components/shallowReactive";
 import { reactive } from 'vue';
 export default {
   name: 'App',
   components: {
     HelloWorld,
     // Ref,
-    RefAndToRef
+    // RefAndToRef,
+    // ToRefs,
+    shallowReactive,
+
   },
   setup() {
     const state = reactive({

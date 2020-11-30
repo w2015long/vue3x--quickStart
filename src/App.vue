@@ -4,7 +4,8 @@
 <!--  <Ref :range='state.range'/>-->
 <!--  <RefAndToRef />-->
 <!--  <ToRefs/>-->
-  <shallowReactive />
+<!--  <shallowReactive />-->
+  <shallowRef />
 </template>
 
 <script>
@@ -12,7 +13,8 @@ import HelloWorld from './components/HelloWorld.vue'
 // import Ref from './components/ref';
 // import RefAndToRef from './components/ref-toRef';
 // import ToRefs from './components/toRefs';
-import shallowReactive from "./components/shallowReactive";
+// import shallowReactive from "./components/shallowReactive";
+import shallowRef from "./components/shallowRef";
 import { reactive } from 'vue';
 export default {
   name: 'App',
@@ -21,7 +23,8 @@ export default {
     // Ref,
     // RefAndToRef,
     // ToRefs,
-    shallowReactive,
+    // shallowReactive,
+    shallowRef,
 
   },
   setup() {

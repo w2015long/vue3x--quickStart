@@ -45,7 +45,9 @@
             const change2 = () => {
                 shallow.value.first.b = 8;
                 shallow.value.first.second.c = 9;
+
                 console.log('shallow 前', shallow);
+
                 triggerRef(shallow);
                 console.log('shallow 后', shallow);
             }

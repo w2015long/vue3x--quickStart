@@ -5,7 +5,8 @@
 <!--  <RefAndToRef />-->
 <!--  <ToRefs/>-->
 <!--  <shallowReactive />-->
-  <shallowRef />
+<!--  <shallowRef />-->
+  <toRaw />
 </template>
 
 <script>
@@ -14,7 +15,8 @@ import HelloWorld from './components/HelloWorld.vue'
 // import RefAndToRef from './components/ref-toRef';
 // import ToRefs from './components/toRefs';
 // import shallowReactive from "./components/shallowReactive";
-import shallowRef from "./components/shallowRef";
+// import shallowRef from "./components/shallowRef";
+import toRaw from "./components/toRaw";
 import { reactive } from 'vue';
 export default {
   name: 'App',
@@ -24,7 +26,8 @@ export default {
     // RefAndToRef,
     // ToRefs,
     // shallowReactive,
-    shallowRef,
+    // shallowRef,
+    toRaw,
 
   },
   setup() {

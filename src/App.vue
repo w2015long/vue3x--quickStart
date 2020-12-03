@@ -7,7 +7,8 @@
 <!--  <shallowReactive />-->
 <!--  <shallowRef />-->
 <!--  <toRaw />-->
-  <markRaw />
+<!--  <markRaw />-->
+  <Watch />
 </template>
 
 <script>
@@ -18,7 +19,9 @@ import HelloWorld from './components/HelloWorld.vue'
 // import shallowReactive from "./components/shallowReactive";
 // import shallowRef from "./components/shallowRef";
 // import toRaw from "./components/toRaw";
-import markRaw from "./components/markRaw";
+// import markRaw from "./components/markRaw";
+
+import Watch from './components/watch';
 import { reactive } from 'vue';
 export default {
   name: 'App',
@@ -30,7 +33,8 @@ export default {
     // shallowReactive,
     // shallowRef,
     // toRaw,
-    markRaw,
+    // markRaw,
+    Watch,
 
   },
   setup() {

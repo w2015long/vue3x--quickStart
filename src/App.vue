@@ -1,6 +1,6 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <HelloWorld msg="一如王者深似海，从此时间是路人"/>
 <!--  <Ref :range='state.range'/>-->
 <!--  <RefAndToRef />-->
 <!--  <ToRefs/>-->
